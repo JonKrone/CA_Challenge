@@ -39,9 +39,9 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-/* eslint-disable arrow-body-style */
+function noop() = { return {}; }
+
 export default connect(
-  () => {return {};},
+  noop,
   mapDispatchToProps
 )(FavoriteReposList);
-/* eslint-enable arrow-body-style */
